@@ -1,35 +1,36 @@
 div {
-position:relative;
+  position: relative;
 }
 
 #nav {
-position: absolute;
-left:50%;
-top:0; 
-margin-left:-220px; /* negative margin equal to half the width */
-width:750px;
-list-style:none;
- 
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -220px;
+  /* negative margin equal to half the width */
+  width: 750px;
+  list-style: none;
 }
 
 #nav li {
-float:left;
+  float: left;
 }
 
 #nav a {
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: block;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
-font-family: 'Roboto', sans-serif;
-background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(0, 0, 0);
 }
-.pageA {
+
+#pageA {
   background-color: #d3deeb;
 }
 
@@ -40,12 +41,11 @@ background-color: rgb(0, 0, 0);
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-	  
 }
 
 #name {
   font-family: 'Open Sans', sans-serif;
-  font-size: 80px; 
+  font-size: 80px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -53,14 +53,14 @@ background-color: rgb(0, 0, 0);
 
 #info {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 28px; 
+  font-size: 28px;
   text-align: center;
   margin-bottom: 10px;
 }
 
 #bio {
   font-family: 'Roboto', sans-serif;
-  font-size: 15px; 
+  font-size: 15px;
   text-align: center;
 }
 
@@ -76,7 +76,7 @@ background-color: rgb(0, 0, 0);
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -110,17 +110,16 @@ background-color: rgb(0, 0, 0);
 
 #facts {
   font-family: 'Roboto', sans-serif;
-  font-size: 50px; 
+  font-size: 50px;
   text-align: center;
   margin-top: 70px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .list {
- text-align: center;
+  text-align: center;
   margin-top: 70px;
   display: block;
   margin-left: auto;
@@ -135,7 +134,7 @@ background-color: rgb(0, 0, 0);
 
 #quote {
   font-family: 'Roboto', sans-serif;
-  font-size: 50px; 
+  font-size: 50px;
   text-align: center;
   margin-top: 70px;
   display: block;
@@ -155,7 +154,7 @@ background-color: rgb(0, 0, 0);
 
 #video {
   font-family: 'Roboto', sans-serif;
-  font-size: 50px; 
+  font-size: 50px;
   text-align: center;
   margin-top: 70px;
   display: block;
@@ -183,7 +182,7 @@ background-color: rgb(0, 0, 0);
 
 .contact {
   font-family: 'Roboto', sans-serif;
-  font-size: 28px; 
+  font-size: 28px;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 70px;
@@ -193,7 +192,7 @@ background-color: rgb(0, 0, 0);
 }
 
 #link {
- color: white;
+  color: white;
 }
 
 .phone {
@@ -205,3 +204,40 @@ background-color: rgb(0, 0, 0);
   width: 50%;
 }
 
+#greeting-container {
+  margin-top: 20px;
+}
+
+#messages{
+    padding-bottom: 15vh;
+    padding-top: 15vh;
+    margin-left: 100px;
+    margin-right: auto;
+    width: 850px;
+    font-family: 'Roboto', sans-serif;
+    color: #080808;
+}
+
+form input {
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    border: none;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 2em;
+    width: 400px;
+    height: 50px;
+    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+    padding-left: 27px;
+}
+
+form textarea:focus, form input:focus{
+    outline:none;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+ height: 100%;
+}
