@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Diana Balderas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="https://img.icons8.com/officel/2x/pixel-star.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+  <body id= "pageA" onload="fetchAndDisplayGreeting()">
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <br>
+    <img src="https://66.media.tumblr.com/6b3b46196d456dfb2d5b48d58ee1f705/07344737b470fbc8-68/s2048x3072/501e5a8779b6562d8c04eb1282e9bb51610ff002.jpg" style="width:200px" class="icon">
+    <h1 id = "name">
+    Diana Balderas 
+    <h1>
+	</div>
+    <h2 id = "info"> Bakersfield, CA · 20 years old </h2>
+    <h3 id = "bio"> Hi, 👋🏽! My name is Diana, a College Student studying Computer science 📓 Originally from South Los Angeles, CA 🌻</h3>
+    <div align="center">
+      <a href="https://www.facebook.com/balderasdiiana" class="fa fa-facebook"></a>
+      <a href="https://www.twitter.com/balderasdiiana" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/balderasdiiana" class="fa fa-instagram"></a>
+      <a href="https://github.com/balderasdiana" class="fa fa-github"></a>
+      <a href="https://www.linkedin.com/in/balderasdiana/" class="fa fa-linkedin"></a>
     </div>
+
+      <form action="/data" method="POST" id="messages">
+            <p>Type Your Name If You Were Here</p>
+            <input name="username"type="text"autocomplete="off">
+        </form>
   </body>
 </html>

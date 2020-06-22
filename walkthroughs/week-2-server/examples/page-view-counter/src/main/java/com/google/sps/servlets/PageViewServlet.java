@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Servlet that returns HTML that contains the page view count. */
-@WebServlet("/page-views")
+/**@WebServlet("/page-views")
 public class PageViewServlet extends HttpServlet {
 
   private int pageViews = 0;
@@ -33,5 +33,17 @@ public class PageViewServlet extends HttpServlet {
     response.setContentType("text/html;");
     response.getWriter().println("<h1>Page Views</h1>");
     response.getWriter().println("<p>This page has been viewed " + pageViews + " times.</p>");
+  }
+} **/
+
+
+/** Servlet that returns some example content. TODO: modify this file to handle comments data */
+@WebServlet("/data")
+public class DataServlet extends HttpServlet {
+
+  @Override
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    response.setContentType("text/html;");
+    response.getWriter().println("<h1>Hello world!</h1>");
   }
 }
