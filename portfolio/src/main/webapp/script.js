@@ -23,6 +23,18 @@ function addRandomGreeting() {
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
+  const greetingContainer = document.getElementById('greeting');
   greetingContainer.innerText = greeting;
+}
+
+//Fetch and Display on Page
+function fetchAndDisplayGreeting(){
+    fetch("/data").then(response => response.json()).then((messages) => {
+            var messageContainer = document.getElementById("messages");
+            messages.forEach((message) => {
+                var para = document.createElement("p");
+                para.innerText = message;
+                messageContainer.appendChild(para);
+            });
+    })
 }
