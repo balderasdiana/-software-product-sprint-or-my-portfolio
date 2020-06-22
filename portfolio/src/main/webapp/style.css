@@ -128,7 +128,7 @@ div {
   font-family: 'Roboto', sans-serif;
 }
 
-.pageC {
+#pageC {
   background-color: #bab7ca;
 }
 
@@ -209,35 +209,41 @@ div {
 }
 
 #messages{
-    padding-bottom: 15vh;
-    padding-top: 15vh;
-    margin-left: 100px;
-    margin-right: auto;
-    width: 850px;
-    font-family: 'Roboto', sans-serif;
-    color: #080808;
+  padding-bottom: 15vh;
+  padding-top: 15vh;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 850px;
+  font-family: 'Roboto', sans-serif;
+  color: #080808;
 }
 
 form input {
-    font-weight: 100;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    border: none;
-    color: black;
-    background-color: whitesmoke;
-    border-radius: 2em;
-    width: 400px;
-    height: 50px;
-    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
-    padding-left: 27px;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  border: none;
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 2em;
+  width: 400px;
+  height: 50px;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+  padding-left: 27px;
 }
 
 form textarea:focus, form input:focus{
-    outline:none;
+  outline:none;
 }
 
-/* Always set the map height explicitly to define the size of the div
-* element that contains the map. */
 #map {
- height: 100%;
+  height: 100%;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
