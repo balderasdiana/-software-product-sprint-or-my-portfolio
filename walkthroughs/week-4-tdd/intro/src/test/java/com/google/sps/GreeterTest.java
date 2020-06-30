@@ -22,12 +22,28 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public final class GreeterTest {
 
-  @Test
-  public void testGreeting() {
-    Greeter greeter = new Greeter();
+    @Test
+    public void testGreeting() {
+        Greeter greeter = new Greeter();
 
-    String greeting = greeter.greet("Ada");
+        String greeting = greeter.greet("Ada");
 
-    Assert.assertEquals("Hello Ada", greeting);
-  }
+        Assert.assertEquals("Hello Ada", greeting);
+    }
+
+    @Test
+    public void testGreetingTrimsWhitespace() {
+        Greeter greeter = new Greeter();
+
+        String greeting = greeter.greet("         Diana         ");
+        Assert.assertEquals("Hello Diana", greeting);
+    }
+
+    @Test
+    public void testGreetingTrimsSpecialCharacters() {
+        Greeter greeter = new Greeter();
+
+        String greeting = greeter.greet("@$$Diana@$$");
+        Assert.assertEquals("Hello Diana", greeting);
+    }
 }
